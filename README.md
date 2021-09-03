@@ -1,11 +1,6 @@
 # dj_web_base
 
-
-mkdir dj_web_base && cd dj_web_base
-mkdir app && cd app
-
-<h3>1. Clonando el repositorio<
-  /h3>
+<h3>1. Clonando el repositorio</h3>
 
 ```$
 git clone https://github.com/magoreal4/dj_web_base.git

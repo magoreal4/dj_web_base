@@ -55,4 +55,13 @@ python ./app/manage.py collectstatic --no-input --clear
 sudo chmod 777 static_volume/
 systemctl status nginx
 systemctl status web_base
+
+systemctl stop [servicename]
+systemctl disable [servicename]
+rm /etc/systemd/system/[servicename]
+rm /etc/systemd/system/[servicename] # and symlinks that might be related
+rm /usr/lib/systemd/system/[servicename] 
+rm /usr/lib/systemd/system/[servicename] # and symlinks that might be related
+systemctl daemon-reload
+systemctl reset-failed
 ```

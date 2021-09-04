@@ -9,7 +9,7 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/home/gonzalo/dj_web_base
+WorkingDirectory=/home/gonzalo/dj_web_base/app
 ExecStart=/home/gonzalo/dj_web_base/virtual/bin/gunicorn \
     --access-logfile - \
     --workers 3 \

@@ -21,14 +21,14 @@ web_base.com
 web_base.socket
 web_base.service
 ```
-## 3. Base de datos y archivos estaticos
+## 4. Base de datos y archivos estaticos
 
 ```$
 python ./app/manage.py migrate
 python ./app/manage.py collectstatic
 ```
 
-## 4. Service, socket 
+## 5. Service, socket 
 
 ```$
 sudo cp web_base.socket /etc/systemd/system/web_base.socket
@@ -37,7 +37,7 @@ sudo systemctl enable web_base
 sudo systemctl start web_base
 ```
 
-## 5. Nginx
+## 6. Nginx
 
 ```$
 sudo cp web_base.com /etc/nginx/sites-available/web_base.com

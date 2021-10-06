@@ -1,5 +1,4 @@
-# dj_web_base
-
+# Django socket deploy
 Estructura básica de un proyecto Django para desplegar mediante sockets
 
 ## 1. Clonando el repositorio

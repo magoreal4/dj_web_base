@@ -1,33 +1,35 @@
 # dj_web_base
 
-<h3>1. Clonando el repositorio</h3>
+Estructura básica de un proyecto Django para desplegar mediante sockets
+
+## 1. Clonando el repositorio
 
 ```$
 git clone https://github.com/magoreal4/dj_web_base.git
 mv dj_web_base <your project>
 ```
-<h3>2. Entorno virtual y paquetes</h3>
+## 2. Entorno virtual y paquetes
 
 ```$
 python3.8 -m venv virtual
 source virtual/bin/activate
 pip install -r requirements.txt
 ```
-<h3>3. Realizar cambios en los archivos</h3>
+## 3. Realizar cambios en los archivos
 
 ```txt
 web_base.com
 web_base.socket
 web_base.service
 ```
-<h3>3. Base de datos y archivos estaticos</h3>
+## 3. Base de datos y archivos estaticos
 
 ```$
 python ./app/manage.py migrate
 python ./app/manage.py collectstatic
 ```
 
-<h3>4. Service, socket</h3>
+## 4. Service, socket 
 
 ```$
 sudo cp web_base.socket /etc/systemd/system/web_base.socket
@@ -36,7 +38,7 @@ sudo systemctl enable web_base
 sudo systemctl start web_base
 ```
 
-<h3>5. Nginx</h3>
+## 5. Nginx
 
 ```$
 sudo cp web_base.com /etc/nginx/sites-available/web_base.com
@@ -45,7 +47,7 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
-<h3>Oros comandos</h3>
+## Oros comandos
 
 ```$
 python ./app/manage.py runserver 8005

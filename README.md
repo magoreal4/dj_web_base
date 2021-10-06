@@ -4,7 +4,7 @@
 
 ```$
 git clone https://github.com/magoreal4/dj_web_base.git
-mv dj_/h3>web_base <your project>
+mv dj_web_base <your project>
 ```
 <h3>2. Entorno virtual y paquetes</h3>
 
